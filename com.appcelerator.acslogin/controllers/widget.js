@@ -42,7 +42,8 @@ var create = function() {
 		username : $.createUser.value,
 		email : $.createEmail.value,
 		password : $.createPass.value,
-		password_confirmation : $.createConfirm.value
+		password_confirmation : $.createConfirm.value,
+		confirmation_template: "new_user_confirmation"
 	}, function(evt) {
 		if (evt.success) {
 			$.message.text = "Account created!";

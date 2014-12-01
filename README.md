@@ -14,7 +14,12 @@ A login widget for Titanium Alloy that integrates with Appcelerator Cloud Servic
 
 - ACS Login
 - Forgotten password retrieval 
-- New account creation
+- New account creation:
+	Added parameter confirmation-template: 'new_user_confirmation'
+	Use by creating an ACS email-template 'new_user_confirmation' containing the activation link
+	<a href="https://cloud.appcelerator.com/users/confirmation?key={{key}}&confirmation_token={{confirmation_token}}">
+	Your confirmation message here</a>
+
 
 ##Usage
 
